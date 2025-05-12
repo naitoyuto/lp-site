@@ -25,7 +25,7 @@ OKINAWA Motor show LP-site
 <!-- プロジェクト名 -->
 ## OKINAWA Motor Show LP-site
 
-<! -- プロジェクトについて -->
+<!-- プロジェクトについて -->
 ## プロジェクトについて
 
 JacaScript, HTML, TailwindCSS　で構成しています
