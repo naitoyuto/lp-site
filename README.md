@@ -45,7 +45,7 @@ JacaScript, HTML, TailwindCSS　で構成しています
 
 <!-- Treeコマンドを使ってディレクトリ構成を記載　-->
 
-) tree -a -I "node_modules|.next|.git|.pytest_cashe|static" -L 2
+ tree -a -I "node_modules|.next|.git|.pytest_cashe|static" -L 2
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
