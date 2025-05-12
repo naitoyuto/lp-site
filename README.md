@@ -75,6 +75,8 @@ JSはmain.jsに記載してください
 
 ```
 npm create vite@latest lp-site --template vanilla
+```
+```
 cd lp-site
 ```
 ```
