@@ -70,7 +70,7 @@ JSはmain.jsに記載してください
 
 ## 開発環境構築
 
-Viteをインストール
+### Viteをインストール
 テンプレートは"Vanilla", スクリプトは"JavaScript"を選択してください
 
 ```
@@ -79,7 +79,7 @@ cd lp-site
 npm install
 ```
 
-TailWindCSSをCDN経由で導入します
+### TailWindCSSをCDN経由で導入します
 index.html内に以下を記載してください
 
 ```
@@ -110,16 +110,15 @@ index.html内に以下を記載してください
 </head>
 ```
 
-src/main.jsに以下を記載してください
+### src/main.jsに以下を記載してください
 
 ```
-// main.js
 document.getElementById("news-list").innerHTML = `
   <p class="text-gray-700">ここにお知らせが表示されます。</p>
 `;
 ```
 
-開発サーバーの起動
+### 開発サーバーの起動
 以下を実行すると、サーバーのIPアドレスが表示されるので、そのURLを開けばサイトが表示されます
 
 ```
