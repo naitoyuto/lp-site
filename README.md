@@ -28,10 +28,10 @@ OKINAWA Motor show LP-site
 <!-- プロジェクトについて -->
 ## プロジェクトについて
 
-JacaScript, HTML, TailwindCSS　で構成しています
-大枠はindex.htmlを編集してください
-画像ファイルは/publicに保存してください
-JSはmain.jsに記載してください
+JacaScript, HTML, TailwindCSSで構成しています。
+大枠はindex.htmlを編集してください。
+画像ファイルは/publicに保存してください。
+JSはmain.jsに記載してください。
 
 ## 環境
 
@@ -128,6 +128,8 @@ document.getElementById("news-list").innerHTML = `
 ```
 npm run dev
 ```
+
+<p align="right">(<a href="#top">トップへ</a>)</p>
 
 ## トラブルシューティング
 
