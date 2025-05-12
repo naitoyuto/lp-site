@@ -29,6 +29,9 @@ OKINAWA Motor show LP-site
 ## プロジェクトについて
 
 JacaScript, HTML, TailwindCSS　で構成しています
+大枠はindex.htmlを編集してください
+画像ファイルは/publicに保存してください
+JSはmain.jsに記載してください
 
 ## 環境
 
@@ -66,4 +69,62 @@ JacaScript, HTML, TailwindCSS　で構成しています
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
 ## 開発環境構築
+
+Viteをインストール
+テンプレートは"Vanilla", スクリプトは"JavaScript"を選択してください
+
+```
+npm create vite@latest lp-site --template vanilla
+cd lp-site
+npm install
+```
+
+TailWindCSSをCDN経由で導入します
+index.html内に以下を記載してください
+
+```
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My LP Site</title>
+
+  <!-- ✅ Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ✅ フォントやカスタム設定（任意） -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            noto: ['"Noto Sans JP"', 'sans-serif'],
+          },
+          colors: {
+            primary: '#1e40af',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+```
+
+src/main.jsに以下を記載してください
+
+```
+// main.js
+document.getElementById("news-list").innerHTML = `
+  <p class="text-gray-700">ここにお知らせが表示されます。</p>
+`;
+```
+
+開発サーバーの起動
+以下を実行すると、サーバーのIPアドレスが表示されるので、そのURLを開けばサイトが表示されます
+
+```
+npm run dev
+```
+
+## トラブルシューティング
 
