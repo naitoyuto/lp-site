@@ -81,7 +81,7 @@ git clone https://github.com/naitoyuto/lp-site.git
 ```
 npm -v
 ```
-まず、以下を実行し、npmとnodeをインストールします。
+まず、以下を実行し、npmとnodeをインストールします。（MacOSの場合）
 ```
 brew install node
 ```
