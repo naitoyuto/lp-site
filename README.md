@@ -76,12 +76,12 @@ JSはmain.jsに記載してください。
 git clone https://github.com/naitoyuto/lp-site.git
 ```
 
-### npmをインストールしていない場合
+### npmをインストールしていない場合（MacOSの場合）
 以下を実行して command not found と表示された場合の対処法です。npmがインストールされていなければ、Viteをインストールすることができません。
 ```
 npm -v
 ```
-まず、以下を実行し、npmとnodeをインストールします。（MacOSの場合）
+まず、以下を実行し、npmとnodeをインストールします。
 ```
 brew install node
 ```
