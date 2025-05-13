@@ -70,6 +70,35 @@ JSはmain.jsに記載してください。
 
 ## 開発環境構築
 
+### gitのクローン方法
+クローンしてこのファイルをローカルフォルダに導入します。以下を実行します。実行場所は導入したいフォルダ内で行ってください。
+```
+git clone https://github.com/naitoyuto/lp-site.git
+```
+
+### npmをインストールしていない場合
+以下を実行して command not found と表示された場合の対処法です。npmがインストールされていなければ、Viteをインストールすることができません。
+```
+npm -v
+```
+まず、以下を実行し、npmとnodeをインストールします。
+```
+brew install node
+```
+command not found と表示されてしまった場合はbrewもインストールされていない可能性があります。その場合は、Homebrewをインストールします。以下を実行してください。
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+次にbrewコマンドを有効化します。以下を実行してください。
+```
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+```
+```
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+以上を実行したら、brewコマンドが使えるはずです。
+
+
 ### Viteをインストール
 テンプレートは"Vanilla", スクリプトは"JavaScript"を選択してください
 
