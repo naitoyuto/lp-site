@@ -113,7 +113,7 @@ npm install
 ```
 
 ### TailWindCSSをCDN経由で導入します
-index.html内に以下を記載してください
+index.html内に以下を記載してください。(git cloneしていれば、すでに記載されているはずです)
 
 ```
 <head>
