@@ -168,5 +168,22 @@ npm run dev
 <p align="right">(<a href="#top">トップへ</a>)</p>
 
 ## トラブルシューティング
+### gitの使用方法
+1.
+```
+git pull
+```
+2.　　全てのファイルをaddする
+```
+git add . 
+```
+3.
+```
+git commit -m "何かしらのメッセージを入れる"
+```
+4.　　mainディレクトリにpushする
+```
+git push origin main
+```
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
