@@ -26,34 +26,88 @@
 <body class="font-sans text-gray-800">
 
   <!-- Hero Section -->
-  <header class="h-screen bg-cover bg-center relative" style="background-image: url('/a.jpg');">
-    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-center">
+  <header class="relative w-full">
+    <!-- スマホ用 -->
+     <img src="/kv_sp.jpg" alt="for_phone" class="block md:hidden w-full h-auto"/>
+    <!-- PC用 -->
+     <img src="/kv_pc.jpg" alt="for_pc" class="hidden md:block w-full h-auto" />
+     <!-- 画像の上にテキストを置きたい場合ここに書く -->
+    <div class="absolute inset-0 bg-black bg-opacity-10 flex items-center justify-center text-center">
       <div class="text-white">
+        <!--
         <h1 class="text-4xl md:text-9xl font-bold font-Anton text-yellow-500">OKINAWA MOTOR SHOW 2025</h1>
         <p class="text-xl mt-4">2025年x月x日〜x日 @ あああ</p>
+      -->
       </div>
     </div>
   </header>
 
   <!-- Overview Section -->
-  <section class="py-12 px-6 max-w-3xl mx-auto">
-    <h2 class="text-2xl font-semibold mb-4">イベント概要あああああああああああああああああああああああああ</h2>
-    <p>イベントについて</p>
+  <section class="py-12 px-6 max-w-3xl mx-auto text-sm text-center">
+    <h2 class="text-lg font-semibold mb-4 text-center">＜開催概要＞</h2>
+    <div class="inline-block text-left mx-auto">
+      <p class="mb-1">◾️開催日：2025年11月8日（土）、9日（日）</p>
+      <p class="mb-1">◾️会場：沖縄アリーナ　及び　コザ運動公園</p>
+      <p class="mb-1">◾️入場料：無料</p>
+      <p class="mb-6">※詳細は随時更新</p>
+    </div>
+
+    <h2 class="text-lg font-semibold mb-2 text-center">＜出展企業様募集中＞</h2>
+    <p class="text-center mb-1">自動車関連の教育機関様のお申し込みも受け付けております。</p>
+    <p class="text-center mb-1">出展料は無料でご案内しています。</p>
+    <p class="text-center mb-6">お申込締切：2025年8月22日（金）（金）23:59</p>
+
+    <div class="flex flex-col items-center gap-4">
+        <!-- 申し込みボタン -->
+      <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block">
+        <!-- スマホ用 -->
+        <img src="/form_sp.png" alt="form_button_ph" class="block md:hidden max-w-[220px] mx-auto hover:opacity-50 transition" />
+        
+        <!-- PC用 -->
+        <img src="/form_pc.png" alt="form_button_pc" class="hidden md:block w-full max-w-[360px] hover:opacity-50 transition" />
+      </a>
+
+      <!-- 出展要項確認ボタン -->
+      <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block">
+        <!-- スマホ用 -->
+        <img src="/guide_sp.png" alt="form_button_ph" class="block md:hidden max-w-[220px] mx-auto hover:opacity-50 transition" />
+        
+        <!-- PC用 -->
+        <img src="/guide_pc.png" alt="form_button_pc" class="hidden md:block w-full max-w-[360px] hover:opacity-50 transition" />
+      </a>
+    </div>
   </section>
 
   <!-- パンフレット埋め込み -->
+  <!--
   <section class="py-12 px-6 max-w-3xl mx-auto text-center">
     <a href="#" target="_blank" 
     class="inline-block mt-6 px-10 py-5 text-2xl bg-blue-600 hover:bg-blue-800 text-white font-semibold rounded-lg shadow-lg transition duration-300">
       パンフレットはこちら
     </a>
   </section>
+-->
 
-  <!-- 最新情報（MicroCMS) -->
-  <section class="py-12 px-6 max-w-3xl mx-auto">
-    <h2 class="text-2xl font-semibold mb-4">最新情報(MicroCMS)</h2>
-    <div id="news-list"></div>
-  </section>
+  <!-- モーターショーについて -->
+   <section class="bg-gray-100 py-12 px-6 max-w-3xl mx-auto text-center text-sm leading-relaxed">
+  <h2 class="font-bold mb-4 text-base">オキナワモーターショーについて</h2>
+  <!-- 上部説明 -->
+  <p class="mb-6">
+    KOZA モータースポーツフェスティバルから始まり<br>
+    2023 年より新たに「モーターショー」としてリニューアル。<br>
+    昨年は 2 日間で 28,000 人の方にご来場いただきました。
+  </p>
+  <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-6">
+    <img src="/photo_pc.jpg" alt="photo" class="w-full sm:w-1/2 rounded-md shadow" />
+  </div>
+  <!-- 下部説明 -->
+  <p>
+    今年もイベントのさらなるパワーアップを目指し<br>
+    一緒に盛り上げていただける出展企業様を募集しております。<br>
+    企業PRと企業間や自動車関連業界関係者との交流の場となるこの機会に<br>
+    ぜひご参加ください。
+  </p>
+</section>
 
   <!-- 最新情報（JSに直書き) -->
   <section class="py-12 px-6 max-w-3xl mx-auto">
@@ -64,9 +118,9 @@
   <!-- 2x3 -->
   <section class="max-w-5xl mx-auto px-4 py-12">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <!-- カード1 -->
+      <!-- カード１ -->
       <div class="rounded overflow-hidden bg-white p-4 text-center">
-        <img src="./a.jpg" alt="説明" class="mb-4 rounded mx-auto" />
+        <img src="#" alt="説明" class="mb-4 rounded mx-auto" />
         <div>
           <h3 class="text-lg font-bold mb-2">タイトル1</h3>
           <p class="text-sm text-gray-600">テキストの説明文が入ります。</p>
@@ -125,21 +179,62 @@
     <h2 class="text-2xl font-semibold mb-4">アクセス</h2>
     <div class="flex justify-center">
       <div class="mx-auto m-0 p-0">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28610.728551743094!2d127.81943340000001!3d26.315453199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e50d9b6df6e89d%3A0x76c4ab9c228dd0cb!2z5rKW57iE55yM57eP5ZCI6YGL5YuV5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1746980174390!5m2!1sja!2sjp" 
-          width="600" 
-          height="450" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3575.8005950714933!2d127.78065231077544!3d26.33295568466937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5136919000377%3A0xd4372a4e75a85cd4!2z5rKW57iE44K144Oz44OI44Oq44O844Ki44Oq44O844OK!5e0!3m2!1sja!2sjp!4v1750348904134!5m2!1sja!2sjp" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
     </div>
   </section>
 
+  <!-- フッター上 -->
+  <section>
+   <div class="text-center">
+    <p class="mb-1">出展料は無料でご案内しています。</p>
+    <p class="mb-2">お申込締切：2025年8月22日（金）23:59</p>
+    <div class="flex flex-col items-center gap-4 mb-4">
+        <!-- 申し込みボタン -->
+      <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block">
+        <!-- スマホ用 -->
+        <img src="/form_sp.png" alt="form_button_ph" class="block md:hidden max-w-[220px] mx-auto hover:opacity-50 transition" />
+        
+        <!-- PC用 -->
+        <img src="/form_pc.png" alt="form_button_pc" class="hidden md:block w-full max-w-[360px] hover:opacity-50 transition" />
+      </a>
+
+      <!-- 出展要項確認ボタン -->
+      <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block">
+        <!-- スマホ用 -->
+        <img src="/guide_sp.png" alt="form_button_ph" class="block md:hidden max-w-[220px] mx-auto hover:opacity-50 transition" />
+        
+        <!-- PC用 -->
+        <img src="/guide_pc.png" alt="form_button_pc" class="hidden md:block w-full max-w-[360px] hover:opacity-50 transition" />
+      </a>
+    </div>
+    <h2 class="mb-2">【お問合せ】</h2>
+    <p class="mb-1">オキナワモーターショー 2025 運営事務局</p>
+    <p class="mb-4">MAIL：info@okinawamotorshow.com</p>
+   </div>
+
+  <!-- SNS -->
+   <div class="flex justify-center gap-4 mb-6">
+    <!-- Instagram -->
+     <a href="#" target="_blank" rel="noopener noreferrer">
+      <img src="/instagram_pc.png" alt="Instagram" class="w-12 h-12" />
+     </a>
+    <!-- TikTok -->
+     <a href="#" target="_blank" rel="noopener noreferrer">
+      <img src="/tiktok_pc.png" alt="TikTok" class="w-12 h-12" />
+     </a>
+   </div>
+  </section>
   <!-- フッター -->
   <footer class="bg-gray-100 text-center py-6 text-sm text-gray-500">
-    © 2024 Okinawa Motor Show Test Site
+    © OKINAWA MOTOR SHOW 2025
   </footer>
 
   <script type="module" src="/src/main.js"></script>
